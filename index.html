@@ -1,0 +1,270 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0"/>
+    <title>ToSofia</title>
+    <!--Google Font-->
+    <link
+    href="https://fonts/googleapis.com/css2?family=Poppins&display=swap"
+    rel="stylesheet"/>
+    <!--Stylesheet-->
+
+</head>
+<body>
+    <section>
+        <div class="star star 1"></div>
+        <div class="star star 2"></div>
+        <div class="star star 3"></div>
+        <div class="star star 4"></div>
+        <div class="star star 5"></div>
+    </section>
+    <div class="card">
+        <div class="outside">
+            <div class="front">
+                <p> Happyyy Birthdayyy!!</p>
+                <div class="cake">
+                    <div class="top-layer"></div>
+                    <div class="middle-layer"></div>
+                    <div class="bottom-layer"></div>
+                    <div class="balls"></div>
+                    <div class="left-balls"></div>
+                    <div class="right-balls"></div>
+                    <div class="candle-left"></div>
+                    <div class="candle-right"></div>
+                </div>
+            </div>
+            <div class="back">
+                <h1><br></br></h1>
+                <p><br></br>
+                    <br></br>
+                    <br></br>
+                    
+                </p>
+            </div>
+            
+        </div>
+        <div class="inside">
+            <p> Happyyyyyy Birthday Sofia!!!! Maswerte ang mundo kasi naisilang ang binibining kagaya mo. Mabait, masipag, matulungin, at higit sa lahat, wholesome, yiiiiii, ngumingiti ka habang binabasa mo tong sulat no? hahahaha biro lang. Sana matupad lahaaaaaaaat ng mga birthday wishes mooooo. Happy birthday ulit and enjoy your birthdayyyyy.  Araw mo to ngayon hahahahaha ey. To more yeaarsss.
+                p.s. check mo steam mo hahahaha  </p>
+        </div>
+    </div>
+
+</body>
+
+</head>
+<style>
+    * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    background: url(/images/star1.png);
+    background-color: #270f36;
+    background-color: -webkit-linear-gradient(to bottom, #270f36, #642b6b, #c86b98,#f09f9c, #ffc19f, #fd9d7f);
+    background: linear-gradient(to bottom, #270f36 , #642b6b, #c86b98,#f09f9c, #ffc19f, #fd9d7f);
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+.card {
+    border: 1px solid #ffffff;
+    width: 640px;
+    height: 400px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    -webkit-perspective: 1200px;
+    perspective: 1200px;
+ 
+}
+.card:hover {
+    transform: rotate(-5deg);
+}
+.card.card:hover .outside{
+    transform: rotateY(-130deg);
+}
+
+.outside, .inside {
+    border: 1px solid #000;
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    left: 50.1%;
+}
+.inside {
+    background: linear-gradient(
+        to right,
+        #e0e0e0, #fff 30%);
+        line-height: 2;
+        padding: 0 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        left: 50%;
+}
+.outside {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    z-index: 1;
+    transform-origin: left;
+    transition: 2s;
+
+}
+.front {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    -webkit-backface-visibility: hidden ;
+    backface-visibility: hidden;
+    transform: rotateX(0deg);
+}
+.front {
+    background-color: #8855e9;
+}
+.back{
+    background: linear-gradient(
+        to right,
+        #e0e0e0, #fff 30%);
+        line-height: 2;
+        padding: 0 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        left: 50%;
+}
+.cake {
+    width: 100%;
+    position: absolute;
+    bottom: 30px; 
+}
+.top-layer,
+.middle-layer,
+.bottom-layer {
+    height: 80px;
+    width: 240px;
+    background-repeat: repeat;
+    background-size: 60px 100px;
+    background-position: 28px0;
+    background-image: linear-gradient(
+        transparent 50px,
+        #ffbf34 50px,
+        #ffbf34 60px,
+        transparent 60px
+    ) ,
+    linear-gradient(#bb8840 15px,
+    #ffff 31px);
+    border-radius: 10px 10px;
+    position: relative;
+    margin: auto;
+}
+.middle-layer{
+    transform: scale(0.85);
+    top: 6px;
+}
+.top-layer {
+    transform: scale(0.7);
+    top: 26px;
+}
+.balls {
+    background-color: #bb8840;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 200px;
+}
+
+.left-balls {
+    background-color: #bb8840;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: absolute;
+    margin: auto;
+    left: 100px;
+    right: 0;
+    bottom: 200px;
+}
+.right-balls{
+    background-color: #bb8840;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 100px;
+    bottom: 200px;
+}
+.candle-left {
+    background-image: repeating-linear-gradient(45deg
+    ,#f09f9c, #fff);
+    height: 45px;
+    width: 15px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 50px;
+    bottom: 200px;
+}
+.candle-right {
+    background-image: repeating-linear-gradient(45deg
+    ,#f09f9c, #fff);
+    height: 45px;
+    width: 15px;
+    position: absolute;
+    margin: auto;
+    left: 50px;
+    right: 0;
+    bottom: 200px;
+}
+.candle-left:before {
+    content: "";
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    background-color: #ffa500;
+    border-radius: 0 50% 50%;
+    bottom: 48px;
+    transform: rotate(45deg);
+    left: -1px;
+}
+.candle-right:before
+{
+    content: "";
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    background-color: #ffa500;
+    border-radius: 0 50% 50%;
+    bottom: 48px;
+    transform: rotate(45deg);
+    left: -1px;
+}.outside p {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 30px;
+    text-align: center;
+    letter-spacing: 3px;
+    color: #000046;
+}
+
+</style>
+</html>
